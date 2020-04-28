@@ -1,0 +1,27 @@
+# This is Git's per-user configuration file.
+[core]
+	autocrlf = false
+	safecrlf = true
+
+[user]
+	name = RajatRasal
+	email = yugiohrajat1@gmail.com
+
+[alias]
+	co = checkout
+	ci = commit 
+	st = status
+	br = branch
+	stat = log --stat
+	hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+	shist = log --oneline
+
+[help] 
+	autocorrect = 30
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+[http]
+	postBuffer = 8443803
