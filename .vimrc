@@ -9,6 +9,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 " Plugins  
+Plugin 'pangloss/vim-javascript'
 Plugin 'tmhedberg/SimpylFold'
 Plugin 'vim-scripts/indentpython.vim'
 Plugin 'Valloric/YouCompleteMe'
@@ -17,6 +18,7 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plugin 'leafgarland/typescript-vim'
 Plugin 'alvan/vim-closetag'
+Plugin 'elixir-editors/vim-elixir'
 
 " All plugin are added before the following line
 call vundle#end()
@@ -71,3 +73,7 @@ autocmd vimenter * NERDTree
 let g:typescript_ignore_typescriptdoc=1
 let g:typescript_ignore_browserwords=1
 let g:typescript_indent_disable=1
+
+" Javascript config
+let g:javascript_plugin_jsdoc = 1
+let g:javascript_plugin_flow = 1
